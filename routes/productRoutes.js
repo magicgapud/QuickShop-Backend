@@ -81,7 +81,7 @@ router.put("/archive/:productId", auth.verify, (req, res) => {
 
 
 // Change product to active
-// http://localhost:4000/marketplace/products/activate/
+// http://localhost:4000/marketplace/products/activate/:productId
 router.put("/activate/:productId", auth.verify, (req, res) => {
 
 	// determine if the user is an admin.

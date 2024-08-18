@@ -97,7 +97,6 @@ router.get("/myOrder", auth.verify, (req, res) => {
 // Retrieve aunthenticated order
 // http://localhost:4000/marketplace/users/orders/:userId
 router.get("/orders/:userId", auth.verify, (req, res) => {
-
 	UserController.orders(req.params.userId).then(result => res.send(result))
 });
 
